@@ -67,6 +67,9 @@ MIDDLEWARE = [
     # cross domain middleware
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',   
+
+    
+    #'corsheaders.middleware.CorsPostCsrfMiddleware',
 ]
 
 ROOT_URLCONF = 'CesApi.urls'
@@ -93,8 +96,8 @@ REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
     'DEFAULT_PERMISSION_CLASSES': [
-        
-        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+        'rest_framework.permissions.AllowAny',
+        #'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
         #'rest_framework.permissions.DjangoModelPermissions',
     ]
 }
@@ -108,7 +111,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -159,4 +161,20 @@ MEDIA_URL = '/media/'
 AUTH_PROFILE_MODULE = 'userprofile.UserProfile'
 
 #CORN
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = (
+    'localhost:4200'
+)
+"""
+CORS_REPLACE_HTTPS_REFERER = True
+
+CORS_ALLOW_METHODS = (
+    #'DELETE',
+    'GET',
+    #'OPTIONS',
+    #'PATCH',
+    'POST',
+    #'PUT',
+)
+
+
+"""

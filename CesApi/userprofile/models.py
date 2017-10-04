@@ -3,10 +3,11 @@ from django.contrib.auth.models import User
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User)
+    firebase_uid = models.CharField(max_length = 250, blank=True) 
     avatar = models.ImageField(blank=True)
-    address = models.CharField(max_length = 250, null=True)
-    lat = models.IntegerField(default=0)
-    lng = models.IntegerField(default=0)
+    address = models.CharField(max_length = 250, blank=True)
+    lat = models.IntegerField( null=True)
+    lng = models.IntegerField( null=True)
 
     #def __str__(self):
     
