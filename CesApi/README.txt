@@ -1,2 +1,2 @@
-# For install dependencis
+# For install dependencies
 pip install -r requirements.pip
