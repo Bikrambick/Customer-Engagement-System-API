@@ -1,0 +1,23 @@
+2017-10-15 03:04:05    INFO    createEnvironment is starting.
+2017-10-15 03:04:06    INFO    Using elasticbeanstalk-us-west-2-804784054696 as Amazon S3 storage bucket for environment data.
+2017-10-15 03:04:26    INFO    Created security group named: sg-547deb29
+2017-10-15 03:04:26    INFO    Created load balancer named: awseb-e-q-AWSEBLoa-EK4EUB9J01SE
+2017-10-15 03:04:28    INFO    Created security group named: awseb-e-qjstwg8bm7-stack-AWSEBSecurityGroup-J0Y3W63GO40K
+2017-10-15 03:04:43    INFO    Created Auto Scaling launch configuration named: awseb-e-qjstwg8bm7-stack-AWSEBAutoScalingLaunchConfiguration-1PFT0JQ4HWIK8
+2017-10-15 03:04:49    INFO    Environment health has transitioned to Pending. Initialization in progress (running for 26 seconds). There are no instances.
+2017-10-15 03:05:45    INFO    Created Auto Scaling group named: awseb-e-qjstwg8bm7-stack-AWSEBAutoScalingGroup-182UJME06EVCT
+2017-10-15 03:05:45    INFO    Waiting for EC2 instances to launch. This may take a few minutes.
+2017-10-15 03:05:45    INFO    Created Auto Scaling group policy named: arn:aws:autoscaling:us-west-2:804784054696:scalingPolicy:9bcbb034-d0e0-4daa-a226-1ce0b60c4a0a:autoScalingGroupName/awseb-e-qjstwg8bm7-stack-AWSEBAutoScalingGroup-182UJME06EVCT:policyName/awseb-e-qjstwg8bm7-stack-AWSEBAutoScalingScaleDownPolicy-6PYD2LZ4RZUX
+2017-10-15 03:05:45    INFO    Created Auto Scaling group policy named: arn:aws:autoscaling:us-west-2:804784054696:scalingPolicy:6d0e760e-1617-4106-a2db-920ac3c27fa6:autoScalingGroupName/awseb-e-qjstwg8bm7-stack-AWSEBAutoScalingGroup-182UJME06EVCT:policyName/awseb-e-qjstwg8bm7-stack-AWSEBAutoScalingScaleUpPolicy-1S3GAG73NPL4
+2017-10-15 03:05:45    INFO    Created CloudWatch alarm named: awseb-e-qjstwg8bm7-stack-AWSEBCloudwatchAlarmLow-1BB417SUS41VS
+2017-10-15 03:05:45    INFO    Created CloudWatch alarm named: awseb-e-qjstwg8bm7-stack-AWSEBCloudwatchAlarmHigh-RL964X79PN1M
+2017-10-15 03:05:49    INFO    Added instance [i-0b5a04c4f56181399] to your environment.
+2017-10-15 03:05:56    ERROR   Dockerfile and Dockerrun.aws.json are both missing, abort deployment
+2017-10-15 03:06:00    ERROR   [Instance: i-0b5a04c4f56181399] Command failed on instance. Return code: 1 Output: Dockerfile and Dockerrun.aws.json are both missing, abort deployment. 
+Hook /opt/elasticbeanstalk/hooks/appdeploy/pre/03build.sh failed. For more detail, check /var/log/eb-activity.log using console or EB CLI.
+2017-10-15 03:06:00    INFO    Command execution completed on all instances. Summary: [Successful: 0, Failed: 1].
+2017-10-15 03:06:49    WARN    Environment health has transitioned from Pending to Severe. Command failed on all instances. Initialization completed 12 seconds ago and took 2 minutes. ELB health is failing or not available for all instances.
+2017-10-15 03:07:03    ERROR   Create environment operation is complete, but with errors. For more information, see troubleshooting documentation.
+2017-10-15 03:21:50    INFO    requestEnvironmentInfo is starting.
+2017-10-15 03:21:52    INFO    [Instance: i-0b5a04c4f56181399] Successfully finished tailing 5 log(s)
+2017-10-15 03:21:57    INFO    Pulled logs for environment instances.

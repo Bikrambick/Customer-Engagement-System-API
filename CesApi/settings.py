@@ -25,9 +25,9 @@ SECRET_KEY = '78$1m-4qhbdbay#k+2xwfvz3fmuw@%4)ya=1s(bq*4sbip-3at'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ces-api-dev-dev.us-west-2.elasticbeanstalk.com']
 
-
+#ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
