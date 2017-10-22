@@ -1,1 +1,0 @@
-@"c:\projects\customer-engagement-system-api\env\scripts\python.exe" "c:\projects\customer-engagement-system-api\env\Scripts\markdown_py" %*
